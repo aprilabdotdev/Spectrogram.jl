@@ -1,2 +1,7 @@
 # data folder is used for testing. 
 data
+
+# system folders
+.pytest_cache
+.vscode
+Manifest.toml
