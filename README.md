@@ -1,8 +1,8 @@
 # Spectrogram.jl
 
-`Spectrogra.jl` is a Julia package for computing spectrograms for SAR imageries along the given dimension. It is based on Julia package [`SignalAnalysis.jl`](https://github.com/org-arl/SignalAnalysis.jl) but has been modified to work with SAR imageries.
+`Spectrogram.jl` is a Julia package for computing spectrograms for SAR imageries along the given dimension. It is based on Julia package [`SignalAnalysis.jl`](https://github.com/org-arl/SignalAnalysis.jl) but has been modified to work with SAR imageries.
 
-`Spectrogra.jl` is capable of multithreading and will use all your CPU cores by default. 
+`Spectrogram.jl` is capable of multithreading and will use all your CPU cores by default. 
 
 ## Installation
 
@@ -18,4 +18,4 @@ julia> using Spectrogram
 
 ## Example
 
-An example of how to use `Spectrogra.jl`  is shown in `examples/example.jl`.
+An example of how to use `Spectrogram.jl`  is shown in `examples/example.jl`.
