@@ -1,7 +1,7 @@
 authors = ["Yuxiao QIN <yuxiao.qin@nwpu.edu.cn>"]
 name = "Spectrogram"
 version = "0.1.0"
-uuid = "42e86c27-6946-4283-b78d-7fc4c2da56bf"
+uuid = "42e86c27-6946-4283-b78d-7fc4c2da56bf"  # mandatory
 
 
 [deps]

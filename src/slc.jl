@@ -24,10 +24,10 @@ function spectrogram1d(x)
 end
 
 function +(x::SignalAnalysis.TFD, y::SignalAnalysis.TFD)::SignalAnalysis.TFD
-    """Assuming the frequency and time range are identical for x & y. 
+    """Assuming the frequency and time range are identical for x & y.
     """
     y = @set y.power = x.power .+ y.power
-    return y 
+    return y
 end
 
 function range_spectrogram_easy_but_inefficient(cdata::Matrix{ComplexF32})::SignalAnalysis.TFD
@@ -57,4 +57,3 @@ end
 function azimuth_spectrogram(cdata::Matrix{ComplexF32})::SignalAnalysis.TFD
     return range_spectrogram(copy(transpose(cdata)))
 end
-
