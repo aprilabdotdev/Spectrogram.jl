@@ -1,9 +1,14 @@
 using ArchGDAL
 using EzXML
 
-export read_gf3_meta, read_gf3_cdata
+Base.@kwdef struct GF3  # keyword argument
+    cdata
+    meta
+    cdata_path
+    meta_path
+end
 
-function read_gf3_meta(meta_path::String)
+function read_meta(gf3::GF3)::GF3
 
     query_list = Dict{String, Any}(  # a list of queries from the xml file
         # volume info
@@ -51,9 +56,9 @@ function read_gf3_meta(meta_path::String)
     )
 
     # query value from a list of xml nodes
-    primates = readxml(meta_path)
+    primates = readxml(gf3.meta_path)
     container = Dict()
-    for (key, value) in query_list        
+    for (key, value) in query_list
         if value === nothing
             container[key] = "Unknown"
         else
@@ -63,10 +68,12 @@ function read_gf3_meta(meta_path::String)
             container[key] = possible_nodes[1].content  # only return the first instance
         end
     end
-    return container 
+    gf3.meta = container
+    return gf3
 end  # end read_meta()
 
-function read_gf3_cdata(gf3_tiff_path)::Matrix{ComplexF32}
+function read_cdata(gf3::GF3)::GF3
     dataset = ArchGDAL.readraster(gf3_tiff_path)
-    return convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
+    gf3.cdata = convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
+    return gf3
 end
