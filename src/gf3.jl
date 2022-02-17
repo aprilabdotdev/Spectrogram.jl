@@ -1,14 +1,14 @@
 using ArchGDAL
 using EzXML
 
-Base.@kwdef struct GF3  # keyword argument
-    cdata
-    meta
+Base.@kwdef mutable struct GF3  # keyword argument
+    cdata = nothing
+    meta = nothing
     cdata_path
     meta_path
 end
 
-function read_meta(gf3::GF3)::GF3
+function read_meta!(gf3::GF3)::GF3
 
     query_list = Dict{String, Any}(  # a list of queries from the xml file
         # volume info
@@ -72,8 +72,8 @@ function read_meta(gf3::GF3)::GF3
     return gf3
 end  # end read_meta()
 
-function read_cdata(gf3::GF3)::GF3
-    dataset = ArchGDAL.readraster(gf3_tiff_path)
+function read_cdata!(gf3::GF3)::GF3
+    dataset = ArchGDAL.readraster(gf3.cdata_path)
     gf3.cdata = convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
     return gf3
 end
