@@ -1,6 +1,6 @@
 module Spectrogram
 
-export read_meta!, read_cdata!, GF3
+export read_meta!, read_meta, read_cdata!, read_cdata, GF3
 
 # data reader
 include("gf3.jl")

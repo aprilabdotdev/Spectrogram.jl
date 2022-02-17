@@ -8,7 +8,7 @@ Base.@kwdef mutable struct GF3  # keyword argument
     meta_path
 end
 
-function read_meta!(gf3::GF3)::GF3
+function read_meta(gf3::GF3)::Dict
 
     query_list = Dict{String, Any}(  # a list of queries from the xml file
         # volume info
@@ -68,12 +68,21 @@ function read_meta!(gf3::GF3)::GF3
             container[key] = possible_nodes[1].content  # only return the first instance
         end
     end
-    gf3.meta = container
-    return gf3
+    return container
 end  # end read_meta()
 
-function read_cdata!(gf3::GF3)::GF3
-    dataset = ArchGDAL.readraster(gf3.cdata_path)
-    gf3.cdata = convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
+function read_meta!(gf3::GF3)::GF3
+    gf3.meta = read_meta(gf3)
     return gf3
 end
+
+function read_cdata(gf3::GF3)::Matrix{Complex}
+    dataset = ArchGDAL.readraster(gf3.cdata_path)
+    return convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
+end
+
+function read_cdata!(gf3::GF3)::GF3
+    gf3.cdata = read_cdata(gf3)
+    return gf3
+end
+

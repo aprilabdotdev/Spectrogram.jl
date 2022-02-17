@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<product>
+    <segmentID>233537</segmentID>
+    <sceneID>6047743</sceneID>
+    <satellite>GF3</satellite>
+    <orbitID>13044</orbitID>
+    <orbitType>ELLIPSE</orbitType>
+    <attiType>STAR</attiType>
+    <Direction>DEC</Direction>
+    <productID>3803930</productID>
+    <DocumentIdentifier>1.0</DocumentIdentifier>
+    <ReceiveTime>NULL</ReceiveTime>
+    <IsZeroDopplerSteering>1</IsZeroDopplerSteering>
+    <Station>MYN</Station>
+    <sensor>
+        <sensorID>SAR</sensorID>
+        <imagingMode>SL</imagingMode>
+        <lamda>0.055517</lamda>
+        <RadarCenterFrequency>5.400012</RadarCenterFrequency>
+        <waveParams num="1">
+            <wave>
+                <waveCode>122</waveCode>
+                <centerLookAngle>40.980000</centerLookAngle>
+                <prf>3201.402344</prf>
+                <proBandwidth>17578.303049</proBandwidth>
+                <sampleRate>266.666667</sampleRate>
+                <sampleDelay>111.930000</sampleDelay>
+                <bandWidth>240.000000</bandWidth>
+                <pulseWidth>54.990002</pulseWidth>
+                <frameLength>32768</frameLength>
+                <compression>BAQ8:4</compression>
+                <baqBlock>1024</baqBlock>
+                <valueMGC>
+                    <HH>36</HH>
+                    <HV>36</HV>
+                    <VH>36</VH>
+                    <VV>36</VV>
+                </valueMGC>
+                <groundVelocity>6692.657848</groundVelocity>
+                <averageAltitude>45.304477</averageAltitude>
+            </wave>
+        </waveParams>
+        <spotlightPara>
+            <start>
+                <prfCounter>8561</prfCounter>
+                <transmitBeamNum>3</transmitBeamNum>
+                <receiveBeamNum>3</receiveBeamNum>
+                <scanNum>0</scanNum>
+                <squintAngle>1.610000</squintAngle>
+            </start>
+            <center>
+                <prfCounter>26890</prfCounter>
+                <transmitBeamNum>3</transmitBeamNum>
+                <receiveBeamNum>3</receiveBeamNum>
+                <scanNum>161</scanNum>
+                <squintAngle>0.000000</squintAngle>
+            </center>
+            <end>
+                <prfCounter>45220</prfCounter>
+                <transmitBeamNum>3</transmitBeamNum>
+                <receiveBeamNum>3</receiveBeamNum>
+                <scanNum>3</scanNum>
+                <squintAngle>1.600000</squintAngle>
+            </end>
+            <scanStep>0.010000</scanStep>
+            <scanSwichNum>321</scanSwichNum>
+            <startScanAngle>1.600000</startScanAngle>
+        </spotlightPara>
+        <lookDirection>R</lookDirection>
+        <antennaMode>S</antennaMode>
+        <agcMode>MGC</agcMode>
+        <polarParams num="1">
+            <polar>
+                <polarMode>HH</polarMode>
+            </polar>
+        </polarParams>
+    </sensor>
+    <platform>
+        <CenterTime>2019-01-31 22:11:35.380412</CenterTime>
+        <Rs>7125724.281727</Rs>
+        <satVelocity>7566.918246</satVelocity>
+        <RollAngle>0.007000</RollAngle>
+        <PitchAngle>-0.071500</PitchAngle>
+        <YawAngle>2.999158</YawAngle>
+        <Xs>-3147957.583572</Xs>
+        <Ys>4558237.903853</Ys>
+        <Zs>4482050.513225</Zs>
+        <Vxs>-1139.521880</Vxs>
+        <Vys>4838.559652</Vys>
+        <Vzs>-5705.092648</Vzs>
+    </platform>
+    <GPS>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:22.999999</TimeStamp>
+            <xPosition>-3133531.750000</xPosition>
+            <yPosition>4497966.500000</yPosition>
+            <zPosition>4552301.000000</zPosition>
+            <xVelocity>-1190.890015</xVelocity>
+            <yVelocity>4897.839844</yVelocity>
+            <zVelocity>-5643.399902</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:23.999999</TimeStamp>
+            <xPosition>-3134720.500000</xPosition>
+            <yPosition>4502862.000000</yPosition>
+            <zPosition>4546655.000000</zPosition>
+            <xVelocity>-1186.739990</xVelocity>
+            <yVelocity>4893.080078</yVelocity>
+            <zVelocity>-5648.419922</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:24.999999</TimeStamp>
+            <xPosition>-3135905.250000</xPosition>
+            <yPosition>4507753.000000</yPosition>
+            <zPosition>4541004.000000</zPosition>
+            <xVelocity>-1182.589966</xVelocity>
+            <yVelocity>4888.319824</yVelocity>
+            <zVelocity>-5653.430176</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:25.999999</TimeStamp>
+            <xPosition>-3137085.750000</xPosition>
+            <yPosition>4512639.000000</yPosition>
+            <zPosition>4535348.500000</zPosition>
+            <xVelocity>-1178.449951</xVelocity>
+            <yVelocity>4883.560059</yVelocity>
+            <zVelocity>-5658.439941</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:26.999999</TimeStamp>
+            <xPosition>-3138262.250000</xPosition>
+            <yPosition>4517520.000000</yPosition>
+            <zPosition>4529687.500000</zPosition>
+            <xVelocity>-1174.300049</xVelocity>
+            <yVelocity>4878.790039</yVelocity>
+            <zVelocity>-5663.439941</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:27.999999</TimeStamp>
+            <xPosition>-3139434.500000</xPosition>
+            <yPosition>4522396.500000</yPosition>
+            <zPosition>4524021.500000</zPosition>
+            <xVelocity>-1170.150024</xVelocity>
+            <yVelocity>4874.009766</yVelocity>
+            <zVelocity>-5668.430176</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:28.999999</TimeStamp>
+            <xPosition>-3140602.500000</xPosition>
+            <yPosition>4527268.000000</yPosition>
+            <zPosition>4518350.500000</zPosition>
+            <xVelocity>-1166.000000</xVelocity>
+            <yVelocity>4869.220215</yVelocity>
+            <zVelocity>-5673.419922</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:29.999999</TimeStamp>
+            <xPosition>-3141766.500000</xPosition>
+            <yPosition>4532135.000000</yPosition>
+            <zPosition>4512674.500000</zPosition>
+            <xVelocity>-1161.859985</xVelocity>
+            <yVelocity>4864.430176</yVelocity>
+            <zVelocity>-5678.399902</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:30.999999</TimeStamp>
+            <xPosition>-3142926.250000</xPosition>
+            <yPosition>4536997.000000</yPosition>
+            <zPosition>4506993.500000</zPosition>
+            <xVelocity>-1157.709961</xVelocity>
+            <yVelocity>4859.640137</yVelocity>
+            <zVelocity>-5683.379883</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:32.000000</TimeStamp>
+            <xPosition>-3144081.750000</xPosition>
+            <yPosition>4541854.000000</yPosition>
+            <zPosition>4501308.000000</zPosition>
+            <xVelocity>-1153.560059</xVelocity>
+            <yVelocity>4854.839844</yVelocity>
+            <zVelocity>-5688.339844</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:33.000000</TimeStamp>
+            <xPosition>-3145233.250000</xPosition>
+            <yPosition>4546706.500000</yPosition>
+            <zPosition>4495617.000000</zPosition>
+            <xVelocity>-1149.400024</xVelocity>
+            <yVelocity>4850.029785</yVelocity>
+            <zVelocity>-5693.310059</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:34.000000</TimeStamp>
+            <xPosition>-3146380.500000</xPosition>
+            <yPosition>4551554.000000</yPosition>
+            <zPosition>4489921.000000</zPosition>
+            <xVelocity>-1145.250000</xVelocity>
+            <yVelocity>4845.209961</yVelocity>
+            <zVelocity>-5698.259766</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:35.000000</TimeStamp>
+            <xPosition>-3147523.750000</xPosition>
+            <yPosition>4556397.000000</yPosition>
+            <zPosition>4484220.500000</zPosition>
+            <xVelocity>-1141.099976</xVelocity>
+            <yVelocity>4840.390137</yVelocity>
+            <zVelocity>-5703.209961</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:36.000000</TimeStamp>
+            <xPosition>-3148662.750000</xPosition>
+            <yPosition>4561235.000000</yPosition>
+            <zPosition>4478514.500000</zPosition>
+            <xVelocity>-1136.949951</xVelocity>
+            <yVelocity>4835.569824</yVelocity>
+            <zVelocity>-5708.160156</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:36.999999</TimeStamp>
+            <xPosition>-3149797.750000</xPosition>
+            <yPosition>4566068.000000</yPosition>
+            <zPosition>4472804.000000</zPosition>
+            <xVelocity>-1132.800049</xVelocity>
+            <yVelocity>4830.740234</yVelocity>
+            <zVelocity>-5713.089844</zVelocity>
+        </GPSParam>
+        <GPSParam>
+            <TimeStamp>2019-01-31 22:11:37.999999</TimeStamp>
+            <xPosition>-3150928.500000</xPosition>
+            <yPosition>4570896.500000</yPosition>
+            <zPosition>4467088.500000</zPosition>
+            <xVelocity>-1128.640015</xVelocity>
+            <yVelocity>4825.899902</yVelocity>
+            <zVelocity>-5718.020020</zVelocity>
+        </GPSParam>
+    </GPS>
+    <ATTI>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:25.990800</TimeStamp>
+            <yawAngle>2.975500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:26.490825</TimeStamp>
+            <yawAngle>2.975500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:26.990825</TimeStamp>
+            <yawAngle>2.975500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:27.490825</TimeStamp>
+            <yawAngle>2.981000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:27.990825</TimeStamp>
+            <yawAngle>2.981000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:28.490825</TimeStamp>
+            <yawAngle>2.981000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:28.990825</TimeStamp>
+            <yawAngle>2.981000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:29.490850</TimeStamp>
+            <yawAngle>2.986500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:29.990850</TimeStamp>
+            <yawAngle>2.986500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:30.490850</TimeStamp>
+            <yawAngle>2.986500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:30.990850</TimeStamp>
+            <yawAngle>2.986500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:31.490850</TimeStamp>
+            <yawAngle>2.986500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:31.990850</TimeStamp>
+            <yawAngle>2.992000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:32.490875</TimeStamp>
+            <yawAngle>2.992000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:32.990875</TimeStamp>
+            <yawAngle>2.992000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:33.490875</TimeStamp>
+            <yawAngle>2.992000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:33.990875</TimeStamp>
+            <yawAngle>2.997500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:34.490875</TimeStamp>
+            <yawAngle>2.997500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:34.990875</TimeStamp>
+            <yawAngle>2.997500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:35.490900</TimeStamp>
+            <yawAngle>2.997500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:35.990900</TimeStamp>
+            <yawAngle>3.003000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:36.490900</TimeStamp>
+            <yawAngle>3.003000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:36.990900</TimeStamp>
+            <yawAngle>3.003000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:37.490900</TimeStamp>
+            <yawAngle>3.003000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:37.990900</TimeStamp>
+            <yawAngle>3.008500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:38.490925</TimeStamp>
+            <yawAngle>3.008500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:38.990925</TimeStamp>
+            <yawAngle>3.008500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:39.490925</TimeStamp>
+            <yawAngle>3.008500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:39.990925</TimeStamp>
+            <yawAngle>3.008500</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:40.490925</TimeStamp>
+            <yawAngle>3.014000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+        <ATTIParam>
+            <TimeStamp>2019-01-31 22:11:40.990925</TimeStamp>
+            <yawAngle>3.014000</yawAngle>
+            <rollAngle>0.007000</rollAngle>
+            <pitchAngle>0.071500</pitchAngle>
+        </ATTIParam>
+    </ATTI>
+    <productinfo>
+        <NominalResolution>1.0</NominalResolution>
+        <WidthInMeters>9600.853455</WidthInMeters>
+        <productLevel>1</productLevel>
+        <productType>SLC</productType>
+        <productFormat>TIFF</productFormat>
+        <productGentime>2019-02-01 06:49:27</productGentime>
+        <productPolar>HH</productPolar>
+    </productinfo>
+    <imageinfo>
+        <imagingTime>
+            <start>2019-01-31 22:11:34.613422</start>
+            <end>2019-01-31 22:11:36.147348</end>
+        </imagingTime>
+        <nearRange>1046863.042545</nearRange>
+        <refRange>1051663.469221</refRange>
+        <eqvFs>266.666667</eqvFs>
+        <eqvPRF>18456.571350</eqvPRF>
+        <center>
+            <latitude>40.381408</latitude>
+            <longitude>116.715909</longitude>
+        </center>
+        <corner>
+            <topLeft>
+                <latitude>40.435825</latitude>
+                <longitude>116.649235</longitude>
+            </topLeft>
+            <topRight>
+                <latitude>40.417812</latitude>
+                <longitude>116.801546</longitude>
+            </topRight>
+            <bottomLeft>
+                <latitude>40.344915</latitude>
+                <longitude>116.630739</longitude>
+            </bottomLeft>
+            <bottomRight>
+                <latitude>40.326889</latitude>
+                <longitude>116.782840</longitude>
+            </bottomRight>
+        </corner>
+        <width>17080</width>
+        <height>28312</height>
+        <widthspace>0.562111</widthspace>
+        <heightspace>0.362617</heightspace>
+        <sceneShift>0</sceneShift>
+        <imagebit>16bit</imagebit>
+        <QualifyValue>
+            <HH>1548.829956</HH>
+            <HV>NULL</HV>
+            <VH>NULL</VH>
+            <VV>NULL</VV>
+        </QualifyValue>
+        <echoSaturation>
+            <HH>0.000000</HH>
+            <HV>NULL</HV>
+            <VH>NULL</VH>
+            <VV>NULL</VV>
+        </echoSaturation>
+    </imageinfo>
+    <processinfo>
+        <EphemerisData>RT</EphemerisData>
+        <AttitudeData>RT</AttitudeData>
+        <algorithm>CS</algorithm>
+        <CalibrationConst>
+            <HH>15.160200</HH>
+            <HV>NULL</HV>
+            <VH>NULL</VH>
+            <VV>NULL</VV>
+        </CalibrationConst>
+        <AzFdc0>35.420257</AzFdc0>
+        <AzFdc1>-0.000011</AzFdc1>
+        <MultilookRange>1</MultilookRange>
+        <MultilookAzimuth>1</MultilookAzimuth>
+        <DoIQComp>0</DoIQComp>
+        <DoChaComp>0</DoChaComp>
+        <DoFdcEst>0</DoFdcEst>
+        <DoFrEst>0</DoFrEst>
+        <RangeWeightType>1</RangeWeightType>
+        <RangeWeightPara>-24.000000,0.000000</RangeWeightPara>
+        <AzimuthWeightType>1</AzimuthWeightType>
+        <AzimuthWeightPara>-19.000000,0.000000</AzimuthWeightPara>
+        <Sidelobe_Suppress_Flag>0</Sidelobe_Suppress_Flag>
+        <Speckle_Suppress_Flag>0</Speckle_Suppress_Flag>
+        <EarthModel>WGS84</EarthModel>
+        <ProjectModel>UTM</ProjectModel>
+        <DEMModel>0</DEMModel>
+        <QualifyModel>0</QualifyModel>
+        <RadiometricModel>0</RadiometricModel>
+        <incidenceAngleNearRange>46.892780</incidenceAngleNearRange>
+        <incidenceAngleFarRange>47.494380</incidenceAngleFarRange>
+        <InnerCalibration>False</InnerCalibration>
+        <NumberOfPoleHHMissingLines>0</NumberOfPoleHHMissingLines>
+        <NumberOfPoleHVMissingLines>0</NumberOfPoleHVMissingLines>
+        <NumberOfPoleVHMissingLines>0</NumberOfPoleVHMissingLines>
+        <NumberOfPoleVVMissingLines>0</NumberOfPoleVVMissingLines>
+        <ReceiverSettableGain>1</ReceiverSettableGain>
+        <ProcessorGainCorrection>1</ProcessorGainCorrection>
+        <ElevationPatternCorrection>1</ElevationPatternCorrection>
+        <AmuthPatternCorrection>1</AmuthPatternCorrection>
+        <SpotlightRadiometricCorrection>1</SpotlightRadiometricCorrection>
+        <RangeLookBandWidth>240.000000</RangeLookBandWidth>
+        <AzimuthLookBandWidth>17578.303049</AzimuthLookBandWidth>
+        <TotalProcessedAzimuthBandWidth>17578.303049</TotalProcessedAzimuthBandWidth>
+        <DopplerParametersReferenceTime>3507.971736</DopplerParametersReferenceTime>
+        <DopplerCentroidCoefficients>
+            <d0>35.324496</d0>
+            <d1>-0.005972</d1>
+            <d2>0.000002</d2>
+            <d3>-0.000000</d3>
+            <d4>-0.000000</d4>
+        </DopplerCentroidCoefficients>
+        <DopplerRateValuesCoefficients>
+            <r0>1726.861136</r0>
+            <r1>-0.514118</r1>
+            <r2>0.000146</r2>
+            <r3>-0.000000</r3>
+            <r4>0.000000</r4>
+        </DopplerRateValuesCoefficients>
+        <DEM>45.304477</DEM>
+    </processinfo>
+</product>
