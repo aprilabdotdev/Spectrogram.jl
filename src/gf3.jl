@@ -1,5 +1,6 @@
 using ArchGDAL
 using EzXML
+import Base: +
 
 Base.@kwdef mutable struct GF3  # keyword argument
     cdata = nothing
@@ -8,6 +9,17 @@ Base.@kwdef mutable struct GF3  # keyword argument
     meta_path
 end
 
+"""
+    read_meta(gf3::GF3)
+
+Read metadata from `GF3` and return a dictionary type.
+
+# Example
+```julia-repl
+julia> gf3 = GF3(meta_path="gf3_meta.xml")
+julia> meta = read_meta(gf3)
+```
+"""
 function read_meta(gf3::GF3)::Dict
 
     query_list = Dict{String, Any}(  # a list of queries from the xml file
@@ -71,16 +83,38 @@ function read_meta(gf3::GF3)::Dict
     return container
 end  # end read_meta()
 
+"""
+    read_meta!(gf3::GF3)
+
+Same as `read_meta()`, but updates `GF3` by writing metadata to `GF3.meta`.
+"""
 function read_meta!(gf3::GF3)::GF3
     gf3.meta = read_meta(gf3)
     return gf3
 end
 
+"""
+    read_cdata(gf3::GF3)
+
+Read GF3 SLC data and return a complex matrix.
+
+# Example
+```julia-repl
+julia> gf3 = GF3(cdata_path="gf3.tiff")
+julia> cdata = read_cdata(gf3)
+N×M Matrix{Complex}
+```
+"""
 function read_cdata(gf3::GF3)::Matrix{Complex}
     dataset = ArchGDAL.readraster(gf3.cdata_path)
     return convert(Matrix{ComplexF32}, dataset[:,:,1] .+ im * dataset[:,:,2])
 end
 
+"""
+    read_cdata!(gf3::GF3)
+
+Same as `read_cdata()`, but updates `GF3` by writing complext matrix to `GF3.cdata`.
+"""
 function read_cdata!(gf3::GF3)::GF3
     gf3.cdata = read_cdata(gf3)
     return gf3
