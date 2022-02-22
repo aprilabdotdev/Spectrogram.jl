@@ -1,11 +1,10 @@
 module Spectrogram
 
-export read_meta!, read_meta, read_cdata!, read_cdata, GF3
+export read_meta!, read_meta, read_cdata!, read_cdata, GF3, GenericSlc, spectrogram2d
 
-# data reader
 include("gf3.jl")
 include("generic_slc.jl")
-# calculate spectrogram and others
-include("base.jl")
+include("spectro.jl")
+include("export.jl")
 
 end  # module
