@@ -2,7 +2,6 @@ using Spectrogram
 using Test
 
 tests = [  # modules to be testsed
-    "base",
     "generic_slc",
     "gf3",
 ]
