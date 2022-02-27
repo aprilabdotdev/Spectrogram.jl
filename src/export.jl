@@ -2,12 +2,12 @@ using Images
 using Plots
 # using FFTW
 
-function serialize(cdata, filename::String="exported.png")
+function serialize(cdata::Matrix{Any}, filename::String="exported.png")
     save(filename, colorview(Gray, 100*abs.(cdata)/maximum(abs.(cdata))))
     return true
 end
 
-function serialize(cdata, plot_func::Function=heatmap)
+function serialize(cdata::Matrix{Any}, plot_func::Function=heatmap)
     cdata .|> abs .|> log |> x -> plot_func(x, color=:jet)
     return true
 end
