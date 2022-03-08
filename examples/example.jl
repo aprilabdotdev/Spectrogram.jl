@@ -28,3 +28,20 @@ function find(dirname::String, filename::String="slave_rsmp.raw")
     return fmatched
 end
 
+""" read data and export quicklook
+"""
+function quicklook(fname::String, lines::Int, pixels::Int)
+
+    cdata = read_cdata(GenericSlc(cdata_path=fname), lines, pixels)
+    fout = joinpath(splitpath(fname)[1:end-1], "quicklook.png")
+    Spectrogram.serialize(cdata, fout)
+
+end
+
+# master img lines and pixels
+lines = 1000
+pixels = 1000
+stack_dir = "some_path"
+for f in find(stack_dir, "slave_rsmp.raw")
+    quicklook(f, lines, pixels)
+end
