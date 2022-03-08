@@ -4,6 +4,7 @@ using Test
 tests = [  # modules to be testsed
     "generic_slc",
     "gf3",
+    "export",
 ]
 
 if length(ARGS) > 0  # options to run specific unittests in cli
