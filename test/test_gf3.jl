@@ -22,7 +22,7 @@ import ArchGDAL as AG
     # intialize GF3
     testdata = GF3(
         cdata_path=temppath,
-        meta_path="test/test_data/gf3_test.meta.xml"
+        meta_path=joinpath(@__DIR__, "test_data/gf3_test.meta.xml")
     )
 
     expected_cdata = read_cdata(testdata)

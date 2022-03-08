@@ -4,8 +4,8 @@ using Plots
 
 # function serialize(cdata::Matrix{T}, filename::String="exported.png")  where T<:Any
 function serialize(cdata::Matrix{T}, filename::String)  where T<:Any
-    abs_cdata = abs.(cdata)
-    save(filename, colorview(Gray, abs_cdata/maximum(abs_cdata)))
+    abs_cdata = clamp01nan.(abs.(cdata))
+    save(filename, colorview(Gray, abs_cdata))
     return true
 end
 
