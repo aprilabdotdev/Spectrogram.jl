@@ -16,6 +16,7 @@ Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 Profile = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
 Setfield = "efcf1570-3423-57d1-acb7-fd33fddbac46"
 SignalAnalysis = "df1fea92-c066-49dd-8b36-eace3378ea47"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]
 julia = "1.6"
