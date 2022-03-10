@@ -1,10 +1,14 @@
 using Images
 using Plots
+using Statistics
 # using FFTW
 
 # function serialize(cdata::Matrix{T}, filename::String="exported.png")  where T<:Any
-function serialize(cdata::Matrix{T}, filename::String)  where T<:Any
-    abs_cdata = clamp01nan.(abs.(cdata))
+function serialize(cdata::Matrix{T}, filename::String, downsample::Int=10)  where T<:Any
+    if downsample>1  # a quick and dirty downsample to reduce file size
+        cdata = cdata[1:downsample:end, 1:downsample:end]
+    end
+    abs_cdata = cdata .|> abs |> x -> x./mean(x) .|> clamp01nan
     save(filename, colorview(Gray, abs_cdata))
     return true
 end
