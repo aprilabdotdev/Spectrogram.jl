@@ -21,12 +21,8 @@ end
 """
 function quicklook(fname::String, lines::Int, pixels::Int)
 
-    println("1")
     cdata = read_cdata(GenericSlc(cdata_path=fname), lines, pixels)
-    # cdata = test(lines, pixels)
-    println("2")
     fout = joinpath(vcat(splitpath(fname)[1:end-1], ["quicklook.png"])...)
-    println("3")
     Spectrogram.serialize(cdata, fout)
 
 end

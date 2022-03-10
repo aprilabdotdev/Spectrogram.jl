@@ -13,7 +13,6 @@ function read_cdata(generic_slc::GenericSlc, lines::Int, pixels::Int)::Matrix{Co
     # doris: pixel-interleaved complex-short 4-byte 2b/2b by default
     cdata_tmp = Mmap.mmap(stream, Matrix{Int16}, (pixels*2, lines))
     cdata_tmp = copy(transpose(cdata_tmp))  # somehow a transpose is needed here for doris file
-    println("Done")
 
     slc_tmp = (
         convert(Matrix{Float32}, cdata_tmp[:, 1:2:end]),
@@ -23,9 +22,6 @@ function read_cdata(generic_slc::GenericSlc, lines::Int, pixels::Int)::Matrix{Co
     # pre-allocation is neccessary for large arrays.
     slc = Matrix{ComplexF32}(undef, lines, pixels)
     for col in 1:lines
-        if col % 100 == 0
-            println(col)
-        end
         slc[col, :] = slc_tmp[1][col, :] .+ im * slc_tmp[2][col, :]
     end
 
